@@ -1,7 +1,7 @@
-![GitHub Repo Size](https://img.shields.io/github/repo-size/lucas-qz/VagasEmprego)
+![GitHub Repo Size](https://img.shields.io/github/repo-size/lucas-qz/PortalVagasEmprego)
 
 # 👨🏻‍💼 Plataforma para oferecer e buscar vagas de emprego 👨🏻‍💼
-Esse é um projeto livre cujo objetivo é disponibilizar uma plataforma para oferecer e buscar vagas de emprego.
+O objetivo desse projeto é disponibilizar uma plataforma para oferecer e buscar vagas de emprego.
 Empresas com vagas disponíveis podem cadastrar as oportunidades na plataforma.
 Pessoas em busca de oportunidades podem buscar vagas de emprego na plataforma.
 Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empresa contratante.
@@ -10,6 +10,7 @@ Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empre
 ## 🛠️ Funcionalidades
 - tela para cadastro de vagas.
 - home inicial para busca de vagas.
+- lista com todas as vagas disponíveis
 - página com detalhes de cada vaga.
 <br/>
 
@@ -21,9 +22,14 @@ Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empre
 
 ## 📡 Tecnologias utilizadas 
 <div align="center"> 
-<img align="left" alt="Flask" height="30" width="30" src="https://cdn.buttercms.com/w8lc0UqsQCnPG0Ax6aiM">
-<img align="left" alt="Python" height="30" width="30" src="https://github.com/devicons/devicon/blob/master/icons/python/python-original.svg">
-<img align="left" alt="MySQL" height="30" width="30" src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg">
+<img align="left" alt="Node" height="30" width="30" src="https://hopetutors.com/wp-content/uploads/2017/03/nodejs-logo-1.png">
+<img align="left" alt="Express" height="30" width="60" src="https://cdn.prod.website-files.com/6320125ace536b6ad148eca3/66502d746f57d299fe0e0c31_Image%201-Express.js.webp">
+<img align="left" alt="JavaScript" height="30" width="30" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png">
+  
+<img align="left" alt="Sequelize" height="30" width="30" src="https://brandslogos.com/wp-content/uploads/images/large/sequelize-logo.png">
+<img align="left" alt="Handlebars" height="30" width="30" src="https://i0.wp.com/blog.fossasia.org/wp-content/uploads/2017/07/handlebars-js.png?fit=500%2C500&ssl=1">
+<img align="left" alt="Bootstrap" height="30" width="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1280px-Bootstrap_logo.svg.png">
+<img align="left" alt="SQLite" height="30" width="50" src="https://cdn.iconscout.com/icon/free/png-256/free-sqlite-282687.png?f=webp">
 <img align="left" alt="Docker" height="30" width="30" src="https://static-00.iconduck.com/assets.00/docker-icon-2048x2048-5mc7mvtn.png">    
 <img align="left" alt="AWS" height="30" width="30" src="https://saidvandeklundert.net/img/aws_logo.png">    
 </div>
@@ -45,7 +51,8 @@ Encontrando uma vaga de interesse, o interessado pode enviar e-mail para a empre
 <br/>
 
 ## 📸 Screenshot do Sistema
-![Design sem nome](https://github.com/user-attachments/assets/0152020c-95b7-4aab-a9af-f49d0d5ae64a)
+<img width="532" alt="zz" src="https://github.com/user-attachments/assets/d0bb68b2-4a32-4685-afad-b9179cb0bb61">
+
 <br/><br/>
 
 ## 🔎 Status do Projeto
