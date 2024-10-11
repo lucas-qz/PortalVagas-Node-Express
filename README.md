@@ -1,6 +1,6 @@
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/lucas-qz/PortalVagasEmprego)
 
-# 👨🏻‍💼 Plataforma para oferecer e buscar vagas de emprego 👨🏻‍💼
+# 👨🏻‍💼 Plataforma Para Oferecer e Buscar Vagas 👨🏻‍💼
 O objetivo desse projeto é disponibilizar uma plataforma para oferecer e buscar vagas de emprego.
 Empresas com vagas disponíveis podem cadastrar as oportunidades na plataforma.
 Pessoas em busca de oportunidades podem buscar vagas de emprego na plataforma.
