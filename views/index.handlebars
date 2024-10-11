@@ -1,0 +1,108 @@
+<div id="top-container" class="container-fluid">
+  <h1 id="main-title" class="text-center">Encontre o emprego dos seus sonhos</h1>
+  <p id="main-subtitle" class="text-center">Explore o site de vagas de emprego
+    mais completo do Brasil!</p>
+
+  <form id="search-form" class="form-inline" action="/" method="GET">
+    <div class="form-group col-md-10">
+      <input
+        type="text"
+        class="form-control"
+        id="job"
+        name="job"
+        placeholder="Digite a vaga que está buscando"
+      />
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-primary">Procurar</button>
+    </div>
+  </form>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div class="candidate-list">
+          {{#if jobs}}
+            {{#if search}}
+              <h2 id="">Buscando vagas que contem: {{search}}</h2>
+            {{else}}
+              <h2 id="">Veja as nossas vagas em destaque</h2>
+            {{/if}}
+          {{else}}
+            <h2 id="">Cadastre uma vaga</h2>
+          {{/if}}
+        </div>
+
+        {{#each jobs}}
+          <div class="candidate-list">
+            <div class="candidate-list-box card mt-4">
+              <div class="p-4 card-body">
+                <div class="align-items-center row">
+                  <div class="col-auto">
+                    <div class="candidate-list-images">
+                      <a href="/jobs/view/{{dataValues.id}}"><img
+                          src="{{dataValues.link}}"
+                          alt
+                          class="avatar-md img-thumbnail rounded-circle"
+                        /></a>
+                    </div>
+                  </div>
+                  <div class="col-lg-5">
+                    <div class="candidate-list-content mt-3 mt-lg-0">
+                      <h5 class="fs-19 mb-0">
+                        <a
+                          class="primary-link"
+                          href="/jobs/view/{{dataValues.id}}"
+                        >{{dataValues.title}}</a>
+                        {{#if dataValues.new_job}}
+                          <span class="badge bg-success ms-1"><i
+                              class="mdi mdi-star align-middle"
+                            ></i>Novo</span>
+                        {{/if}}
+                      </h5>
+                      <p class="text-muted mb-2">{{dataValues.company}}</p>
+                      <ul class="list-inline mb-0 text-muted">
+                        <li class="list-inline-item"><i
+                            class="mdi mdi-map-marker"
+                          ></i>
+                          {{dataValues.local}}</li>
+                        <li class="list-inline-item"><i
+                            class="mdi mdi-wallet"
+                          ></i>
+                          R${{dataValues.salary}}</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+
+                  </div>
+                </div>
+                <div class="favorite-icon">
+
+                  <a
+                    class="nav-link btn btn-primary"
+                    href="/jobs/view/{{dataValues.id}}"
+                  >Ver vaga</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+
+      </div>
+    </div>
+  </div>
+
+  <div class="candidate-list">
+    <div class="candidate-list-box card mt-4">
+      <div class="p-4 card-body">
+      </div>
+    </div>
+  </div>
+
+</section>

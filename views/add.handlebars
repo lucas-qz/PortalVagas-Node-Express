@@ -1,0 +1,138 @@
+<style>
+  .text-center{color:#ff1678} body { padding: 30px; background-color: #F7F9FC;
+  margin-bottom: 0px; background-size: cover; color: #005cbf; background-image:
+  url("/img/back.jpg"); }
+</style>
+
+<div id="add-form-container" class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Anunciar uma vaga e recrutar talentos nunca foi
+        tão fácil</h1>
+    </div>
+    <div id="form-box" class="col-md-12">
+      <h2>Publique uma vaga de emprego e receba os melhores currículos.</h2>
+      <form action="/jobs/add" method="POST">
+
+        <div class="form-group">
+          <label for="title">Título da vaga:</label>
+          <input
+            type="text"
+            maxlength="50"
+            class="form-control"
+            id="title"
+            name="title"
+            placeholder="Digite o título da vaga"
+            required
+          />
+          <small id="titleHelp" class="form-text text-muted">O título é muito
+            importante, seja claro e objetivo.</small>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Descrição da vaga:</label>
+          <textarea
+            type="text"
+            maxlength="255"
+            class="form-control"
+            id="description"
+            name="description"
+            placeholder="Descreva as atividades do candidato..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="salary">Salário oferecido:</label>
+          <input
+            type="text"
+            maxlength="5"
+            class="form-control"
+            id="salary"
+            name="salary"
+            placeholder="Digite o salário da vaga"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Empresa contratante:</label>
+          <input
+            type="text"
+            maxlength="100"
+            class="form-control"
+            id="company"
+            name="company"
+            placeholder="Digite a empresa que vai contratar"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail para contato:</label>
+          <input
+            type="email"
+            maxlength="50"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Digite o e-mail para contato"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="local">Localização da vaga:</label>
+          <select
+            name="local"
+            id="local"
+            class="form-control"
+            required
+            maxlength="2"
+          >
+            <option value="">Escolha a UF da vaga</option>
+            <option value="TO">TO</option>
+            <option value="SE">SE</option>
+            <option value="SP">SP</option>
+            <option value="SC">SC</option>
+            <option value="RR">RR</option>
+            <option value="RO">RO</option>
+            <option value="RS">RS</option>
+            <option value="RN">RN</option>
+            <option value="RJ">RJ</option>
+            <option value="PI">PI</option>
+            <option value="PE">PE</option>
+            <option value="PR">PR</option>
+            <option value="PB">PB</option>
+            <option value="PA">PA</option>
+            <option value="MG">MG</option>
+            <option value="MS">MS</option>
+            <option value="MT">MT</option>
+            <option value="MA">MA</option>
+            <option value="GO">GO</option>
+            <option value="ES">ES</option>
+            <option value="CE">CE</option>
+            <option value="BA">BA</option>
+            <option value="AM">AM</option>
+            <option value="AP">AP</option>
+            <option value="AL">AL</option>
+            <option value="AC">AC</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="link">Link do logo da empresa:</label>
+          <input
+            type="url"
+            class="form-control"
+            id="link"
+            name="link"
+            placeholder="Cole aqui o link do logo da empresa contratante."
+            required
+          />
+        </div>
+        <input type="hidden" name="new_job" value="1" />
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
